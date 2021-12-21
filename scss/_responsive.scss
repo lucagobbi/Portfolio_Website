@@ -1,0 +1,156 @@
+@include media-lg-screen {
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            margin-top: 3rem;
+            margin-right: 3rem;
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.2rem;
+            }
+
+            &__link {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .skills__carousel-list{
+        font-size: 1.4rem;
+    }
+}
+
+@include media-md-screen {
+
+    .home{
+        padding-top: 15vh;
+    
+    &__center {
+        grid-template-columns: 1fr;
+
+        &-text {
+            width: 60%;
+            font-size: 1rem;
+            padding-top: 0;
+        }
+
+        &-img {
+            margin-top: 10%;
+            padding-left: 8%;
+        }
+
+        &-name {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+    .projects{
+        padding: 15vh 5vw;
+        height: 90vh;
+        overflow-y: scroll;
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15vh;
+        }
+    }
+
+}
+
+
+@include media-sm-screen {
+
+    .home{
+        padding-top: 15vh;
+    
+        &__center {
+            grid-template-columns: 1fr;
+
+            &-text {
+                font-size: 1rem;
+                padding-top: 0;
+            }
+
+            &-img {
+                margin-top: 10%;
+                padding-left: 8%;
+            }
+
+            &-name {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .about__bio {
+        padding: 0 15%!important;
+
+        p {
+            font-size: 1.2rem!important;
+        }
+    }
+
+    .education__title {
+        padding-top: 5vh!important;
+    }
+
+    .education__container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5% 12% 12%;
+        margin-top: -30%;
+        
+        .education__img {
+            width: 100%;
+            margin-bottom: -55%;
+        }
+    }
+
+    .contact {
+        padding-top: 20vh;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        &__list {
+            font-size: 1.3rem;
+        }
+
+        .social-icons--contact {
+            margin-top: 5%;
+            font-size: 1rem;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .projects {
+        padding: 10vh 2vw;
+
+        img {
+            width: 65%;
+        }
+    }
+   
+}

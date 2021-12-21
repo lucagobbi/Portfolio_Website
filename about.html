@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/icomoon-v1.0/style.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Luca Gobbi | About Me</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="index.html" class="menu-nav__link">Home</a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="about.html" class="menu-nav__link">About Me</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="projects.html" class="menu-nav__link">My Projects</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="contact.html" class="menu-nav__link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <div class="about__bio">
+                <h1 class="text-secondary">Who I am</h1>
+                <p>Student, developer and blockchain enthusiast.<br> My academic career is focused on
+                    international
+                    relations, but one of my greatest passion is coding.</p>
+            </div>
+        </section>
+
+
+        <section class="skills">
+            <div class="skills__title">
+                <h1>Skills</h1>
+            </div>
+            <div class="skills__carousel">
+                <button class="skills__carousel-prev" onclick="plusSlides(-1)"><i
+                        class="fas fa-chevron-left"></i></button>
+                <ul class="skills__carousel-list">
+                    <li class="skills__carousel-item fade"><i class="fab fa-python fa-9x"></i></li>
+                    <li class="skills__carousel-item fade" style="padding: 0;"><span class="icon-django"></span></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-html5 fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-css3-alt fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-js-square fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-git-alt fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-bootstrap fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-sass fa-7x"></i></li>
+                    <li class="skills__carousel-item fade"><i class="fab fa-bitcoin fa-9x"></i></li>
+                    <li class="skills__carousel-item fade"><span class="icon-solidity"></span></li>
+                </ul>
+                <button class="skills__carousel-next" onclick="plusSlides(1)"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="education">
+            <div class="education__title">
+                <h1>Education</h1>
+            </div>
+            <div class="education__container">
+                <div>
+                    <a href="https://www.unimi.it/en"><img class="education__img" src="img/unimi.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.theblockchainmanagementschool.it/"><img class="education__img"
+                            src="img/tbms.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.start2impact.it"><img class="education__img" src="img/s2i.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="social-icons">
+        <a href="https://github.com/lucagobbi">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lucagobbi/">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/luca.gobbi.752">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+    </div>
+    <footer>
+        Luca Gobbi &copy; 2021
+    </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

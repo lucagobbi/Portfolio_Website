@@ -1,0 +1,33 @@
+.projects {
+    height: 65vh;
+    padding-top: 15vh;
+
+    &__items {
+        display: grid;
+        grid-template-areas: "a b"
+                             "c d";
+        grid-row-gap: 10%;
+        grid-column-gap: -5%;
+        align-items: center;
+        justify-items: center;
+
+        &:hover img {
+            opacity: 0.3;
+        }
+
+        img {
+            width: 55%;
+            height: 95%;
+            object-fit: cover;
+            -webkit-box-reflect:below 1px linear-gradient(transparent, transparent, #0004);
+            transform-origin: center;
+            transform:perspective(800px) rotateY(25deg);
+            @include transition-ease;
+
+            &:hover {
+                transform:perspective(800px) rotateY(0deg);
+                opacity:1;
+            }
+        }
+    }
+}
