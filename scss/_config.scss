@@ -1,45 +1,45 @@
-$primary-color: #1A1A1D;
-$secondary-color: #CFA616;
+$primary-color: #1a1a1d;
+$secondary-color: #cfa616;
 $font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 700
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
 );
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin transition-ease {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-@mixin animate($animation,$duration,$method,$times){
-    animation: $animation $duration $method $times;
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
 }
 
-@mixin keyframes($fade){
-    @keyframes #{$fade} {
-        @content;
-    }
+@mixin keyframes($fade) {
+  @keyframes #{$fade} {
+    @content;
+  }
 }
 
 @mixin media-sm-screen {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
+  @media screen and (max-width: 767px) {
+    @content;
+  }
 }
 
 @mixin media-md-screen {
-    @media screen and (max-width: 1024px) {
-        @content;
-    }
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin media-lg-screen {
-    @media screen and (min-width: 1025px) {
-        @content;
-    }
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
 }
